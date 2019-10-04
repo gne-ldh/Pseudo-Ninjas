@@ -26,6 +26,12 @@
 	$row = login_data($rollno,$upassword,$tablename,$conn);
     mysqli_query($conn,$sql) or die(test());
          /* under this definate thing work if any error accur go bak to error_time*/
+    $row=login_data("17bt020327","xyz","ninjaart",$conn);
+
+    $flag[] = $row;
+
+    print(json_encode($flag));
+
         if(empty($rollno) || empty($upassword)){
             header("Location: ../index.php?wrong=empty");
         }
@@ -36,5 +42,3 @@
         }else{
             header("Location: ../signup.php?wrong=not");
         }       
-
-	echo "this";
