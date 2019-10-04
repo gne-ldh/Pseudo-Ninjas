@@ -12,3 +12,7 @@ CREATE TABLE ninjaart(
 
 INSERT INTO `ninjaart`(`id`, `fname`, `lname`, `rollno`, `upassword`, `email`, `phone`, `sem`, `branch`) 
 VALUES (1,'abc','def','17BT020327','xyz','moksh.choudhary.2@gmail.com','8700016973',5,"CSE");
+
+
+CREATE TABLE `teacher` ( `name` VARCHAR(10) NOT NULL , `username`
+ VARCHAR(15) NOT NULL , `email` VARCHAR(12) NOT NULL , `password` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;

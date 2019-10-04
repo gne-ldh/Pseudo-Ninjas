@@ -48,6 +48,7 @@ class error_handle{
 }
 
     $obj = new error_handle();
+
     if(isset($_GET['report'])){
         echo "this";
         $id=$_GET['xb'];
