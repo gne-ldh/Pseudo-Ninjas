@@ -1,5 +1,5 @@
 <?php 
-    include_once "connection.php";
+    include "connecton.php";
     /**
      * this class provide data in form of array and send that data to the call area
      */
@@ -8,6 +8,7 @@
         protected $sem;
         protected $Branch;
         protected $email;
+        public $tablename = "ninjaart";
         //Here we required the sql commend as a parameter 
         public function getinfo($sql){
             $result = $this->connection()->query($sql);
