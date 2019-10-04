@@ -1,0 +1,104 @@
+body
+{
+	margin:0px;	
+	padding:0px;
+}
+#header
+{
+	width:100%;
+    height:12%;
+}
+.logo{
+    margin-top: 0%;
+}
+.head1{
+    background-color:rgb(235, 229, 229) ;
+}
+.nav-brand{
+    text-align: center;
+    color:white;
+}
+
+
+.nav-brand:hover{
+    text-align: center;
+    color:white;
+    text-decoration: none;
+}
+.nav-brand h1{
+    font-size:30px;
+    margin-bottom:0px;
+}
+.nav-brand p{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.overlay{
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    position: absolute;
+    background: rgb(0,0,0,0.5);
+    z-index:0px;
+}
+.nav-link{
+    color: white;
+}
+.takeaction{
+    border:2px solid white;
+    border-radius:50px;
+}
+.navbar-toggler-icon{
+    height:10px;
+    width:30px;
+}
+.takeaction:hover{
+    border:2px solid red;
+    border-radius:50px;
+    background: red;
+}
+.custom div{
+    display: inline-block;
+}
+.c1{
+    width:100px;
+}
+.c2{
+    width:500px;
+    text-align:center;   
+}
+.imgs{
+    border-radius: 5px;
+    box-shadow:10px 10px 0px #ccc;
+}
+.btnsty{
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+}
+.imgr{
+    border-radius:10px;
+}
+@media screen and (max-width:600px){
+    .imgr{
+        width:100%;
+    }   
+}
+table.table thead tr th,
+table.table thead {
+    border-left: 4px solid black;
+    border-right:4px solid black;
+}
+table {
+    border-radius:5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:rgba(237, 240, 243, 0.89);
+    width: 90%;
+    padding-top:1%;
+    margin: 0px auto;
+    float: none;
+}
+
+
