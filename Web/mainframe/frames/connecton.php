@@ -2,7 +2,7 @@
 /**
  * This class is connection template for mainframe 
  */
-    class connect_me{
+     class connect_me{
         private $servername = "localhost";
         private $dbname = "ninjaart";
         private $dbuser = "root";

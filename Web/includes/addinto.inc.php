@@ -40,7 +40,7 @@ class error_handle{
             if(mysql_fetch_row($row)>0){
                 $_SESSION["id"] = $id;
                 echo "this";
-                //header("Location: ../mainframe/mainwindo.php");/*use id to make take advantage of session*/;
+                //header("Location: ../mainframe/index.php");/*use id to make take advantage of session*/;
             }else{
                 header("Location: ../signup.php?wrong=bad");
             }
@@ -53,7 +53,7 @@ class error_handle{
         echo "this";
         $id=$_GET['xb'];
         $_SESSION["id"] = $id;
-        header("Location: ../mainframe/mainwindo.php");
+        header("Location: ../mainframe/index.php");
     }else if(isset($_POST["submit"])){
         /*
             add logic to check in login
@@ -71,7 +71,7 @@ class error_handle{
                 $_SESSION["I_remember"] = $row["id"];
             }
             /*use id to make take advantage of session*/;
-            header("Location: ../mainframe/mainwindo.php");
+            header("Location: ../mainframe/index.php");
         }else{
             header("Location: ../index.php?wrong=not");
         }       

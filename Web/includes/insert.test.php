@@ -38,7 +38,7 @@
         else if($row["rollno"]==$rollno && $row["upassword"]==$upassword){
             $_SESSION["id"] = $row["id"];
             /*use id to make take advantage of session*/;
-            header("Location: ../mainframe/mainwindo.php");
+            header("Location: ../mainframe/index.php");
         }else{
             header("Location: ../signup.php?wrong=not");
         }       
