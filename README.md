@@ -1,2 +1,18 @@
 # Pseudo-Ninjas
-This repo is a solution for Notes distribution for any institute
+# Programming Languages
+* PHP
+* CSS
+* JSON
+* HTML
+* JS
+* Android
+* PYTHON
+
+# Features of Notes-Management System
+* Student panel
+* Teacher panel
+* Admin panel
+
+# Future Update
+* Chat Forum
+* Recommendation System
