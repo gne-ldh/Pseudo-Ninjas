@@ -5,10 +5,14 @@
 * JSON
 * HTML
 * JS
+* Android
 * PYTHON
+
 # Features of Notes-Management System
 * Student panel
 * Teacher panel
 * Admin panel
-* Chat Forum
 
+# Future Update
+* Chat Forum
+* Recommendation System
