@@ -98,7 +98,12 @@ body {
                 </div>
                                 </div>
                         </div><br><br><br>
-                        <div id="mySidenav" class="sidenav">
+          <div class="row bg-light mt-0">
+               <div class="col-md-4 float-left " >student Name :<?php echo " ".$fname." ".$lname; ?></div>
+               <div class="col-md-4 text-center pl-1 pr-5" >Branch : <?php echo " ".$Branch ; ?></div>
+               <div class="col-md-4 float-right" >Semester : <?php echo " ".$sem ; ?></div>
+                </div> <button type="button" name="logout" onclick="clicked()" value="logout" class="btn btn-danger float-right mt-2">Logout</button>
+            <br>  <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">About</a>
   <a href="#">Services</a>
@@ -152,6 +157,3 @@ function closeNav() {
 </body>
 
 </html>
-
-    
-<input type="button" name="logout" onclick="clicked()" value="logout">

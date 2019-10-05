@@ -6,7 +6,7 @@ $connect = new mysqli('localhost','root','','ninjaart');
         $email = $_POST['email'];
         $password = $_POST['password'];
         $qry = "INSERT INTO `teacher`(`name`, `username`, `email`, `password`) VALUES (\"$name\",\"$username\",\"$email\",\"$password\") ";
-        $connect->query($qry)or die();
+        $connect->query($qry)or die("this is not working");
+        header("Location: adminpage.php?");
     }
-    header("Location: adminpg.php?");
     ?>
