@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Document</title>
+<link rel="stylesheet" href="mainframe/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!--gead-->
 
@@ -24,6 +25,22 @@
 
 </head>
 <body class="bg-dark">
+<div class="container-fluid">
+                        <div class="row">
+                                <div id="header">   
+                                    <div class="title1">     
+                                        <div class="col-md-12 float-right mx-auto  p-0 mt-0 bg-warning" >
+                                        <img class="  float-left mt-0 ml-4" src="logo.png" alt=""/>      
+                                <h4 class="mr-5 float-right font-weight-bold"><br>Atal Bihari Vajpayee Govt Institute of 
+                                                    Engineering & Technology</h4><br><br><br>
+                                        
+                                <h6 class="mr-5 p-1 float-right">Pragatinagar, Shimla (H.P) - 171202</h6> 
+                            
+                        </div>
+                </div>
+                                </div>
+                        </div><button class="btn btn-success float-right mt-2 ml-3"><a style="text-decoration: none" class="text-dark" href="adminwars/">Admin</a></button>
+                        <button class="btn btn-danger float-right mt-2"><a class="text-dark" href="teacher_time/">Teacher</a></button>
 <div class="row">
 <div class="col-md-6 p-5 bg-light mx-auto mt-5">
 <h1 class="text-center">Login</h1>

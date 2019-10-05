@@ -1,12 +1,12 @@
 <?php
-$connect = new mysqli('localhost','root','','ninjaart');
+$connect =  mysqli_connect('localhost','root','','ninjaart');
     if(isset($_POST['name'])){
         $name = $_POST['name'];
         $username = $_POST['username'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $qry = "INSERT INTO `teacher`(`name`, `username`, `email`, `password`) VALUES (\"$name\",\"$username\",\"$email\",\"$password\") ";
-        $connect->query($qry)or die("this is not working");
+        $sql = "INSERT INTO `teacher`(`name`, `username`, `email`, `password`) VALUES (\"$name\",\"$username\",\"$email\",\"$password\"); ";
+        mysqli_query($connect,$sql)or die("this is not working");
         header("Location: adminpage.php?");
     }
     ?>
