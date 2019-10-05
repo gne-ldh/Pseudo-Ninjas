@@ -136,7 +136,7 @@ function closeNav() {
 <tbody>    
     <?php
        echo '<tr>
-            <td>'.$fname.' '.$lname.'</td>
+            <td>'.$subject.'</td>
             <td>'.$teacher_name.'</td>
             <td><a href="'.$link_for_notes.'">click here</a></td>
             <td>'.$creadet.'</td>

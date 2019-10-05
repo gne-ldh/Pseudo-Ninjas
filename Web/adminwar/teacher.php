@@ -51,11 +51,7 @@
 </form>
 </form>
 </div>
-</div>
-<form action="upload_file.php" method="POST"  enctype="multipart/form-data">
-        <input type = "file" name = "fileToUpload"><br/>
-        <input type="submit" name="submit" value="submit">
-    </form><br/><br/><br/>
+</div><br/><br/><br/>
 <hr width="85%" class="border border-danger" /> 
                             <div class="row"><br/><br/>
         <div class=" col-lg-12 font-weight-bold  text-right bg-light text-secondary"><br><br/><br/> Designed and Developed by Moksh,Nishant,Riya,Sakshi
