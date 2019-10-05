@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Document</title>
-<link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="../mainframe/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body class="bg-dark">
 <div class="container-fluid">
@@ -52,10 +52,7 @@
 </form>
 </div>
 </div>
-<form action="upload_file.php" method="POST"  enctype="multipart/form-data">
-        <input type = "file" name = "fileToUpload"><br/>
-        <input type="submit" name="submit" value="submit">
-    </form><br/><br/><br/>
+<br/><br/><br/>
 <hr width="85%" class="border border-danger" /> 
                             <div class="row"><br/><br/>
         <div class=" col-lg-12 font-weight-bold  text-right bg-light text-secondary"><br><br/><br/> Designed and Developed by Moksh,Nishant,Riya,Sakshi

@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="css/bootstrap.css" />
+ <link rel="stylesheet" href="../mainframe/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body class="bg-dark">
+    <?php
+        if(isset($_GET["wk"])){
+        if($_GET['wk']=='s'){
+        echo '<script type="text/javascript">alart("Success full-upload");</script>';
+        }else{
+        echo '<script type="text/javascript">alart("Upload Fails");</script>';
+    }
+    }
+    ?>
 <div class="container-fluid">
                         <div class="row">
                                 <div id="header">   
@@ -58,12 +67,19 @@
         }
     ?>
     </div>
-</div><br><br><br><br><br><br><br><br><br>
+</div>
+    <div>
+        <form action="upload_file.php" method="POST"  enctype="multipart/form-data">
+            <input type = "file" name = "fileToUpload"><br/>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    <div>
+    <br><br><br><br><br><br><br><br><br>
 <hr width="85%" class="border border-danger" /> 
  <div  class="row"><br/><br/>
 
         <div class="col-lg-12 font-weight-bold mb-0 text-right bg-light text-secondary"
-         style="position:absolute; width:100p%;"><br><br/><br/>
+         style="position:absolute; width:100%;"><br><br/><br/>
          Designed and Developed by Moksh,Nishant,Riya,Sakshi<br><br>
         </div>
     </div>
