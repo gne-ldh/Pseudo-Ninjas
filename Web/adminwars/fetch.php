@@ -6,9 +6,8 @@
 
 	if(empty($name) or empty($pass)){
 		header("Location: index.php?wrong=empty");
-	}
-
-	 $sql = "SELECT * FROM `Admin`
+	}elseif (condition) {
+        $sql = "SELECT * FROM `Admin`
         WHERE uname = \"$name\" and password = \"$pass\"";
         $result = mysqli_query($conn,$sql) 
         or die(header("Location: index.php?wrong=not"));
@@ -19,4 +18,7 @@
             header("Location: adminpage.php");
         }else{
             header("Location: index.php?wrong=not");
-        }       	
+        }           
+    }else{
+            header("Location: index.php?wrong=nc");
+	     }
