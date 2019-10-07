@@ -12,7 +12,6 @@
 <body class="bg-dark">
     
 <?php
-    $connect = new mysqli('localhost','root','','ninjaart');
     if(isset($_GET['lwn'])){
         echo '<script> 
             alert("deleted");
