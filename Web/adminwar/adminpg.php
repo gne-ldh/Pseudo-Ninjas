@@ -48,7 +48,7 @@
         <input class="bg-dark"type="email" name="email" placeholder="email"/></label><br>
         <label class="text-light" for="name">Password :&nbsp;&nbsp;
         <input class="bg-dark"type="password" name="password" placeholder="password"/></label><br>
-        <input type="submit" onClick="runthis()"/> 
+        <input class="bg-dark" type="submit" onClick="runthis()"/> 
     </form><br>
 
     <table class='table'>
