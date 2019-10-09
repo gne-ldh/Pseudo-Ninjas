@@ -1,3 +1,7 @@
+<?php 
+    include "session.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +11,31 @@
     <title>Document</title>
   <link rel="stylesheet" href="../mainframe/style.css"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script
+              src="https://code.jquery.com/jquery-3.4.1.min.js"
+              integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
 
 </head>
 <body class="bg-dark">
+
+    <script type="text/javascript">
+            function out(){
+               sessionStorage.removeItem("id");
+               window.location.href = "index.php";
+            }
+            if(window.location.search == "?lwn=011&msg=insertion"){
+                alert("failed insertion");
+            }
+        </script>
     
 <?php
-    $connect = new mysqli('localhost','root','','ninjaart');
     if(isset($_GET['lwn'])){
-        echo '<script> 
-            alert("deleted");
-        </script>';
+        if($_GET['lwn']==011){
+            echo '<script> alert("failed '.$_GET['msg'].'"); </script>';
+        }elseif ($_GET['lwn']==007) {
+            echo '<script> alert("Successfull '.$_GET['msg'].'"); </script>';
+        }
     }
 ?>
 <div class="container-fluid">
@@ -30,27 +49,62 @@
                 </div>
                                 </div>
                         </div>
-                        <?php
-   
-    ?><br>
+    <br>
     <style>
+        #name{
+            border-radius: 30px;
+            padding: 10px;
+        }
+        #uname{
+            border-radius: 30px;
+            padding: 10px;
+        }
+        #email{
+            border-radius: 30px;
+            padding: 10px;
+        }
+        #pass{
+            border-radius: 30px;
+            padding: 10px;
+        }
+        #button_sub{
+            border-radius: 30px;
+            font-size: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 10px;
+            padding-left: 10px;
+            background: #343a40;
+            border-color: #343a40;
+            box-shadow: none;
+            text-shadow: none;
+        }
         input{
             color:white;
         }
     </style>
     <h3 class=" text-center font-weight-bold text-light">Teacher Information Updates</h3><br>
-    <form action="insert.php" method="POST">
-    <label class="text-light"for="name">Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input class="bg-dark"type="text" name="name" placeholder="name"/></label><br>
-    <label class="text-light" for="name">UserName :
-        <input class="bg-dark" type="text" name="username" placeholder="username"/></label><br>
-        <label class="text-light" for="name">Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input class="bg-dark"type="email" name="email" placeholder="email"/></label><br>
-        <label class="text-light" for="name">Password :&nbsp;&nbsp;
-        <input class="bg-dark"type="password" name="password" placeholder="password"/></label><br>
-        <input type="submit" onClick="runthis()"/> 
-    </form><br>
+    <form action="work.php" method="POST">
+        <div id="msg"></div>
+        <label class="text-light"for="name">Name :
+        <input class="bg-dark" id="name" type="text" name="name" placeholder="name"/></label>
+        <label class="text-light" for="name">UserName :
+        <input class="bg-dark" id="uname" type="text" name="username" placeholder="username"/>
+        </label>
+        <label class="text-light" for="name">Email :
+        <input class="bg-dark" id="email" type="email" name="email" placeholder="email"/></label><label class="text-light" for="name">Password :
+        <input class="bg-dark" id="pass" type="password" name="password" placeholder="password"/></label><br>
+        <input  id="button_sub" type="submit" name="submit" value="submit" /> 
+    </form>
 
+    <br>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#input_text").load("insert.php");
+        });
+    </script>
+    
     <table class='table'>
     <thead>
     <th class="bg-light">name</th>
@@ -59,26 +113,17 @@
     <th class="bg-light">password</th>
     <th class="bg-light">Action</th>
     </thead>
-<tbody>
+<tbody id="input_text">
 
-<?php
-    $qry="select * from teacher";
-    $result= $connect->query($qry);
-    $i = 1;
-    while($row = $result->fetch_assoc()){
-        echo "<tr>";
-        echo "<td class=\"bg-light\">$row[name]</td>";
-        echo "<td class=\"bg-light \">$row[username]</td>";
-        echo "<td class=\"bg-light\">$row[password]</td>";
-        echo "<td class=\"bg-light\">$row[email]</td>";
-        echo "<td class=\"bg-light\"><a href='delete.php?username=".$row['username']."' class='btn btn-danger'>Delete</a>
-        <a href='edit.php?name=".$row['username']."' class='btn btn-warning'>Edit</a>
-        <a href='view.php?name=".$row['username']."&email=".$row['email']."' class='btn btn-success'>View</a></td>";
-        echo "</tr>";
-    }
-    ?>
 </tbody>
     </table>
+    <input class="bg-dark" style="border-radius: 18px; padding: 6px; position: absolute; right: 4px; top: 4px;" type="submit" value="logout" onclick="out()">
+<script type="text/javascript">
     
+    if (window.location.search=="?*"){
+        window.location.search = "";
+    }
+
+</script>
 </body>
 </html>

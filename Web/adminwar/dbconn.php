@@ -5,4 +5,5 @@
     $dbpassword = "";
 
     $conn = mysqli_connect($servername,$dbuser,$dbpassword,$dbname);
+    $connect = $conn;
 ?>

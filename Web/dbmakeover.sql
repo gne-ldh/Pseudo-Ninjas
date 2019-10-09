@@ -19,8 +19,11 @@ VALUES (1,'abc','def','17BT020327','xyz','moksh.choudhary.2@gmail.com','87000169
 
 --database for teacher's
 
-CREATE TABLE `teacher` ( `name` VARCHAR(10) NOT NULL , `username`
- VARCHAR(15) NOT NULL , `email` VARCHAR(12) NOT NULL , `password` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
+CREATE TABLE `teacher` ( `name` VARCHAR(20) NOT NULL 
+                        , `username` VARCHAR(17) NOT NULL UNIQUE 
+                        , `email` TEXT NOT NULL  UNIQUE
+                        , `password` VARCHAR(18) NOT NULL 
+                       ) ENGINE = InnoDB;
 
 --database for Admin
 
@@ -28,3 +31,4 @@ CREATE TABLE `Admin` (
 	uname varchar(10) UNIQUE NOT NULL,
 	password varchar(8) UNIQUE NOT NULL 
 );
+
