@@ -5,5 +5,7 @@
 	}else{
 		if(!$_SESSION["id"]==1){
 			header("Location: index.php");
+		}else{
+			include_once "dbconn.php";
 		}
 	}

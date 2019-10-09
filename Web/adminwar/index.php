@@ -11,6 +11,12 @@
 
 </head>
 <body class="bg-dark">
+	<?php 
+		session_start();
+		if(isset($_SESSION["id"])){
+				header("Location: adminpg.php?e=".$_SESSION['id']);
+		}
+	?>
 <div class="container-fluid">
 <div class="row">
 <div id="header"> 

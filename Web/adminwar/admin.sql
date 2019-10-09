@@ -1,2 +1,5 @@
-CREATE TABLE `teacher` ( `name` VARCHAR(10) NOT NULL , `username`
- VARCHAR(15) NOT NULL , `email` VARCHAR(12) NOT NULL , `password` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
+CREATE TABLE `teacher` ( `name` VARCHAR(20) NOT NULL 
+                        , `username` VARCHAR(17) NOT NULL UNIQUE 
+                        , `email` VARCHAR(20) NOT NULL  UNIQUE
+                        , `password` VARCHAR(18) NOT NULL 
+                       ) ENGINE = InnoDB;

@@ -38,7 +38,7 @@
                         </div>
                 </div>
                                 </div>
-                        </div><a href="adminwars" class="btn btn-success float-right mt-2 ml-3">Admin</a>
+                        </div><a href="adminwar" class="btn btn-success float-right mt-2 ml-3">Admin</a>
                         <a href="teacher_time/" class="btn btn-danger float-right mt-2">Teacher</a>
                         <br>
         <div class="row">

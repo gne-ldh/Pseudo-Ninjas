@@ -1,5 +1,5 @@
 <?php 
-    
+    session_start();
     include_once "dbconn.php";
     $name = $_POST['uname'];
     $pass = $_POST['lpassword'];
@@ -15,7 +15,6 @@
         if(empty($name) || empty($pass)){
             header("Location: index.php?wrong=empty");
         }else if($name == $row["uname"] && $pass == $row["password"]){
-            session_start();
             $_SESSION["id"] = 1;
             header("Location: adminpg.php");
         }else{
