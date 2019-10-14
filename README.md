@@ -67,14 +67,14 @@ This project is a prototype for the Notes Management System and it is designed f
    # Installation of Project
 
   To install this project in your machine just follow few steps :
-  Clone the repository in your machine
-  Put the folder inside the root folder of your sever
-  Extract the folder
-  Export the database using mysql (You don't need to create a database)
-  Now head toward the project and login using passwords
+  * Clone the repository in your machine
+  * Extract the folder 
+  * Put the folder inside the htdocs folder of your sever(it's upon you which server you want to use locahost/any hosting server)
+  * Export the database using mysql (You don't need to create a database a file is all ready in the Web folder just use that file to create database) 
+  * Now head toward the project and login using passwords
 
     Username : 17BT020327 Password : xyz (For Student Access)
-       
+  * And for admin panel by default username/password is Admin/password      
  
 
    
